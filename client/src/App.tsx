@@ -10,7 +10,6 @@ import AboutPage from "@/pages/about";
 import MenuPage from "@/pages/menu";
 import GalleryPage from "@/pages/gallery";
 import ContactPage from "@/pages/contact";
-import ReservationsPage from "@/pages/reservations";
 import NotFound from "@/pages/not-found";
 
 function Router() {
@@ -24,7 +23,6 @@ function Router() {
           <Route path="/menu" component={MenuPage} />
           <Route path="/gallery" component={GalleryPage} />
           <Route path="/contact" component={ContactPage} />
-          <Route path="/reservations" component={ReservationsPage} />
           <Route component={NotFound} />
         </Switch>
       </main>

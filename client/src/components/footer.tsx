@@ -1,4 +1,5 @@
 import { useTranslation } from 'react-i18next';
+import logoImage from '@assets/Vector_1751294472760.png';
 
 export default function Footer() {
   const { t } = useTranslation();
@@ -12,7 +13,14 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid md:grid-cols-3 gap-8">
           <div>
-            <h3 className="text-2xl font-bold text-gold mb-4">Georgian Point</h3>
+            <div className="flex items-center space-x-3 mb-4">
+              <img 
+                src={logoImage} 
+                alt="Georgian Point Logo" 
+                className="h-8 w-8"
+              />
+              <h3 className="text-2xl font-bold text-gold">Georgian Point</h3>
+            </div>
             <p className="text-cream/80 mb-4">
               {t('footer.description')}
             </p>
@@ -62,14 +70,7 @@ export default function Footer() {
                   {t('nav.contact')}
                 </button>
               </li>
-              <li>
-                <button 
-                  onClick={() => handleNavigation("/reservations")} 
-                  className="hover:text-gold transition-colors"
-                >
-                  {t('nav.reservations')}
-                </button>
-              </li>
+
             </ul>
           </div>
           

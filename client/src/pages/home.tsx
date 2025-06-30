@@ -60,11 +60,12 @@ export default function Home() {
               {t('hero.cta')}
             </Button>
             <Button 
-              onClick={() => scrollToSection("reservations")}
+              onClick={() => window.open('tel:+994509970606')}
               variant="outline"
               className="border-gold text-gold hover:bg-gold/10 px-8 py-4 text-lg font-semibold transition-all duration-300"
             >
-              {t('nav.reservations')}
+              <Phone className="mr-2 h-5 w-5" />
+              {t('hero.callToReserve')}
             </Button>
           </div>
         </div>

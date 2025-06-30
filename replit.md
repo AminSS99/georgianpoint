@@ -106,6 +106,8 @@ Changelog:
 - June 30, 2025: Added language switcher component with seamless language switching
 - June 30, 2025: Created dedicated pages for About, Menu, Gallery, Contact, and Reservations
 - June 30, 2025: Integrated i18next for comprehensive internationalization
+- June 30, 2025: Removed reservation system per user request, replaced with phone contact only
+- June 30, 2025: Added Georgian Point logo to navbar and updated all translations
 ```
 
 ## User Preferences

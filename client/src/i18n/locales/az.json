@@ -4,8 +4,7 @@
     "about": "Haqqımızda",
     "menu": "Menyu",
     "gallery": "Qalereya",
-    "contact": "Əlaqə",
-    "reservations": "Rezervasiya"
+    "contact": "Əlaqə"
   },
   "hero": {
     "title": "Georgian Point",
@@ -14,7 +13,8 @@
     "location": "Landau 14, Bakı, Azərbaycan",
     "hours": "Hər gün 12:00 - 01:00",
     "phone": "+994 50 997 06 06",
-    "cta": "Menyumuzu kəşf edin"
+    "cta": "Menyumuzu kəşf edin",
+    "callToReserve": "Rezervasiya üçün zəng edin"
   },
   "about": {
     "title": "Bakıda Gürcüstan dadı",
@@ -71,27 +71,6 @@
       "mapTitle": "Bizi Bakıda tapın",
       "mapSubtitle": "Landau 14, Bakı, Azərbaycan",
       "mapDescription": "Bakının mərkəzində, ictimai nəqliyyatla asanlıqla çatmaq olar"
-    }
-  },
-  "reservations": {
-    "title": "Rezervasiya edin",
-    "subtitle": "Unudulmaz Gürcü yemək təcrübəsi üçün masanızı rezerv edin. 24 saat ərzində rezervasiyanızı təsdiq edəcəyik.",
-    "form": {
-      "name": "Ad",
-      "phone": "Telefon",
-      "email": "E-mail",
-      "date": "Tarix",
-      "time": "Vaxt",
-      "guests": "Qonaqlar",
-      "message": "Xüsusi istəklər",
-      "namePlaceholder": "Tam adınız",
-      "phonePlaceholder": "+994 XX XXX XX XX",
-      "emailPlaceholder": "sizin.email@example.com",
-      "guestsPlaceholder": "2",
-      "messagePlaceholder": "Pəhriz məhdudiyyətləri, xüsusi hadisə, oturma üstünlükləri...",
-      "submit": "Rezervasiya sorğusu göndər",
-      "required": "* Tələb olunan sahələr. Rezervasiyanızı təsdiq etmək üçün 24 saat ərzində sizinlə əlaqə saxlayacağıq.",
-      "success": "Rezervasiya sorğunuz üçün təşəkkür edirik! Tezliklə sizinlə əlaqə saxlayacağıq."
     }
   },
   "footer": {

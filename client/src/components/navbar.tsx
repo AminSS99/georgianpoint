@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Menu } from "lucide-react";
 import LanguageSwitcher from "@/components/language-switcher";
+import logoImage from '@assets/Vector_1751294472760.png';
 
 export default function Navbar() {
   const { t } = useTranslation();
@@ -30,7 +31,6 @@ export default function Navbar() {
     { path: "/menu", label: t("nav.menu") },
     { path: "/gallery", label: t("nav.gallery") },
     { path: "/contact", label: t("nav.contact") },
-    { path: "/reservations", label: t("nav.reservations") },
   ];
 
   return (
@@ -43,9 +43,14 @@ export default function Navbar() {
           <div className="flex items-center">
             <button 
               onClick={() => handleNavigation("/")}
-              className="text-2xl font-bold text-gold hover:text-soft-gold transition-colors duration-300"
+              className="flex items-center space-x-3 hover:opacity-80 transition-opacity duration-300"
             >
-              Georgian Point
+              <img 
+                src={logoImage} 
+                alt="Georgian Point Logo" 
+                className="h-10 w-10"
+              />
+              <span className="text-2xl font-bold text-gold">Georgian Point</span>
             </button>
           </div>
 

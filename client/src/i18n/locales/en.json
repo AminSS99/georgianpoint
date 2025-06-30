@@ -4,8 +4,7 @@
     "about": "About Us",
     "menu": "Menu",
     "gallery": "Gallery",
-    "contact": "Contact Us",
-    "reservations": "Reservations"
+    "contact": "Contact Us"
   },
   "hero": {
     "title": "Georgian Point",
@@ -14,7 +13,8 @@
     "location": "Landau 14, Baku, Azerbaijan",
     "hours": "Daily 12:00 - 01:00",
     "phone": "+994 50 997 06 06",
-    "cta": "Explore Our Menu"
+    "cta": "Explore Our Menu",
+    "callToReserve": "Call to Reserve"
   },
   "about": {
     "title": "A Taste of Georgia in Baku",
@@ -71,27 +71,6 @@
       "mapTitle": "Find Us in Baku",
       "mapSubtitle": "Landau 14, Baku, Azerbaijan",
       "mapDescription": "In the heart of Baku, easily accessible by public transport"
-    }
-  },
-  "reservations": {
-    "title": "Make a Reservation",
-    "subtitle": "Reserve your table for an unforgettable Georgian dining experience. We'll confirm your booking within 24 hours.",
-    "form": {
-      "name": "Name",
-      "phone": "Phone",
-      "email": "Email",
-      "date": "Date",
-      "time": "Time",
-      "guests": "Guests",
-      "message": "Special Requests",
-      "namePlaceholder": "Your full name",
-      "phonePlaceholder": "+994 XX XXX XX XX",
-      "emailPlaceholder": "your.email@example.com",
-      "guestsPlaceholder": "2",
-      "messagePlaceholder": "Dietary restrictions, special occasion, preferred seating...",
-      "submit": "Submit Reservation Request",
-      "required": "* Required fields. We'll contact you within 24 hours to confirm your reservation.",
-      "success": "Thank you for your reservation request! We will contact you shortly."
     }
   },
   "footer": {
