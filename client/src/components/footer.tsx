@@ -1,9 +1,10 @@
+import { useTranslation } from 'react-i18next';
+
 export default function Footer() {
-  const scrollToSection = (sectionId: string) => {
-    const element = document.getElementById(sectionId);
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
-    }
+  const { t } = useTranslation();
+
+  const handleNavigation = (path: string) => {
+    window.location.href = path;
   };
 
   return (
@@ -13,8 +14,7 @@ export default function Footer() {
           <div>
             <h3 className="text-2xl font-bold text-gold mb-4">Georgian Point</h3>
             <p className="text-cream/80 mb-4">
-              Bringing authentic Georgian flavors to Baku with sophisticated dining 
-              and warm hospitality.
+              {t('footer.description')}
             </p>
             <div className="flex space-x-4">
               <a href="#" className="text-gold hover:text-cream cursor-pointer transition-colors">
@@ -36,52 +36,55 @@ export default function Footer() {
           </div>
           
           <div>
-            <h4 className="text-xl font-semibold text-gold mb-4">Quick Links</h4>
+            <h4 className="text-xl font-semibold text-gold mb-4">{t('footer.quickLinks')}</h4>
             <ul className="space-y-2 text-cream/80">
               <li>
                 <button 
-                  onClick={() => scrollToSection("menu")} 
+                  onClick={() => handleNavigation("/menu")} 
                   className="hover:text-gold transition-colors"
                 >
-                  Menu
+                  {t('nav.menu')}
                 </button>
               </li>
               <li>
                 <button 
-                  onClick={() => scrollToSection("gallery")} 
+                  onClick={() => handleNavigation("/gallery")} 
                   className="hover:text-gold transition-colors"
                 >
-                  Gallery
+                  {t('nav.gallery')}
                 </button>
               </li>
               <li>
                 <button 
-                  onClick={() => scrollToSection("contact")} 
+                  onClick={() => handleNavigation("/contact")} 
                   className="hover:text-gold transition-colors"
                 >
-                  Contact
+                  {t('nav.contact')}
                 </button>
               </li>
               <li>
-                <a href="tel:+994509970606" className="hover:text-gold transition-colors">
-                  Reservations
-                </a>
+                <button 
+                  onClick={() => handleNavigation("/reservations")} 
+                  className="hover:text-gold transition-colors"
+                >
+                  {t('nav.reservations')}
+                </button>
               </li>
             </ul>
           </div>
           
           <div>
-            <h4 className="text-xl font-semibold text-gold mb-4">Hours & Location</h4>
+            <h4 className="text-xl font-semibold text-gold mb-4">{t('footer.hoursLocation')}</h4>
             <div className="text-cream/80 space-y-2">
-              <p>Landau 14, Baku, Azerbaijan</p>
-              <p>Daily: 12:00 - 01:00</p>
-              <p>+994 50 997 06 06</p>
+              <p>{t('hero.location')}</p>
+              <p>{t('hero.hours')}</p>
+              <p>{t('hero.phone')}</p>
             </div>
           </div>
         </div>
         
         <div className="border-t border-gold/20 mt-8 pt-8 text-center text-cream/60">
-          <p>&copy; 2024 Georgian Point. All rights reserved.</p>
+          <p>{t('footer.copyright')}</p>
         </div>
       </div>
     </footer>

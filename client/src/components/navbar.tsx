@@ -1,49 +1,36 @@
 import { useState, useEffect } from "react";
+import { useTranslation } from 'react-i18next';
+import { useLocation } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Menu } from "lucide-react";
+import LanguageSwitcher from "@/components/language-switcher";
 
 export default function Navbar() {
+  const { t } = useTranslation();
+  const [location, navigate] = useLocation();
   const [isScrolled, setIsScrolled] = useState(false);
-  const [activeSection, setActiveSection] = useState("home");
 
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 50);
-      
-      // Update active section based on scroll position
-      const sections = ["home", "about", "menu", "gallery", "contact"];
-      const current = sections.find(section => {
-        const element = document.getElementById(section);
-        if (element) {
-          const rect = element.getBoundingClientRect();
-          return rect.top <= 100 && rect.bottom >= 100;
-        }
-        return false;
-      });
-      
-      if (current) {
-        setActiveSection(current);
-      }
     };
 
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const scrollToSection = (sectionId: string) => {
-    const element = document.getElementById(sectionId);
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
-    }
+  const handleNavigation = (path: string) => {
+    navigate(path);
   };
 
   const navItems = [
-    { id: "home", label: "Home" },
-    { id: "about", label: "About" },
-    { id: "menu", label: "Menu" },
-    { id: "gallery", label: "Gallery" },
-    { id: "contact", label: "Contact" },
+    { path: "/", label: t("nav.home") },
+    { path: "/about", label: t("nav.about") },
+    { path: "/menu", label: t("nav.menu") },
+    { path: "/gallery", label: t("nav.gallery") },
+    { path: "/contact", label: t("nav.contact") },
+    { path: "/reservations", label: t("nav.reservations") },
   ];
 
   return (
@@ -55,7 +42,7 @@ export default function Navbar() {
           {/* Logo */}
           <div className="flex items-center">
             <button 
-              onClick={() => scrollToSection("home")}
+              onClick={() => handleNavigation("/")}
               className="text-2xl font-bold text-gold hover:text-soft-gold transition-colors duration-300"
             >
               Georgian Point
@@ -63,14 +50,14 @@ export default function Navbar() {
           </div>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:block">
-            <div className="ml-10 flex items-baseline space-x-8">
+          <div className="hidden md:flex items-center space-x-6">
+            <div className="flex items-baseline space-x-6">
               {navItems.map((item) => (
                 <button
-                  key={item.id}
-                  onClick={() => scrollToSection(item.id)}
+                  key={item.path}
+                  onClick={() => handleNavigation(item.path)}
                   className={`transition-colors duration-300 ${
-                    activeSection === item.id
+                    location === item.path
                       ? "text-gold"
                       : "text-cream hover:text-gold"
                   }`}
@@ -79,10 +66,12 @@ export default function Navbar() {
                 </button>
               ))}
             </div>
+            <LanguageSwitcher />
           </div>
 
           {/* Mobile Navigation */}
-          <div className="md:hidden">
+          <div className="md:hidden flex items-center space-x-2">
+            <LanguageSwitcher />
             <Sheet>
               <SheetTrigger asChild>
                 <Button variant="ghost" size="icon" className="text-cream hover:text-gold">
@@ -93,10 +82,10 @@ export default function Navbar() {
                 <div className="flex flex-col space-y-6 mt-8">
                   {navItems.map((item) => (
                     <button
-                      key={item.id}
-                      onClick={() => scrollToSection(item.id)}
+                      key={item.path}
+                      onClick={() => handleNavigation(item.path)}
                       className={`text-left transition-colors duration-300 ${
-                        activeSection === item.id
+                        location === item.path
                           ? "text-gold"
                           : "text-cream hover:text-gold"
                       }`}

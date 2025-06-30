@@ -101,6 +101,11 @@ Changelog:
 - June 30, 2025: Added comprehensive reservation form with validation
 - June 30, 2025: Improved navigation and user experience
 - June 30, 2025: Added smooth animations and improved visual hierarchy
+- June 30, 2025: Transformed to multi-page architecture with route-based navigation
+- June 30, 2025: Implemented full trilingual support (English, Russian, Azerbaijani)
+- June 30, 2025: Added language switcher component with seamless language switching
+- June 30, 2025: Created dedicated pages for About, Menu, Gallery, Contact, and Reservations
+- June 30, 2025: Integrated i18next for comprehensive internationalization
 ```
 
 ## User Preferences

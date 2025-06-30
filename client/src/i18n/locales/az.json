@@ -1,0 +1,108 @@
+{
+  "nav": {
+    "home": "Əsas Səhifə",
+    "about": "Haqqımızda",
+    "menu": "Menyu",
+    "gallery": "Qalereya",
+    "contact": "Əlaqə",
+    "reservations": "Rezervasiya"
+  },
+  "hero": {
+    "title": "Georgian Point",
+    "subtitle": "Bakının qəlbində əsl Gürcü mətbəxi",
+    "description": "Gürcüstanın zəngin dadlarını və isti qonaqpərvərliyini müasir, zərif mətbəximizdə yaşayın - məxmər toxumalar və yüksək səviyyədə xidmət",
+    "location": "Landau 14, Bakı, Azərbaycan",
+    "hours": "Hər gün 12:00 - 01:00",
+    "phone": "+994 50 997 06 06",
+    "cta": "Menyumuzu kəşf edin"
+  },
+  "about": {
+    "title": "Bakıda Gürcüstan dadı",
+    "description1": "Georgian Point sizə mütərəqqi, isti atmosferdə əsl Gürcü mətbəxinin dadlarını təqdim edir. Zəif işıqlandırılmış yeməkxanamız zəngin məxmər toxumalar, açıq kərpic vurğular və zərif üslub ilə unudulmaz yemək təcrübəsi üçün mükəmməl fon yaradır.",
+    "description2": "Ənənəvi xinqali və xaçapuridən tutmuş premium şərab və spirtli içkilərə qədər hər yemək diqqətlə hazırlanır və Gürcü kulinar ənənələrinə hörmətlə yanaşılır.",
+    "features": {
+      "traditional": "Ənənəvi reseptlər",
+      "premium": "Premium inqredientlər",
+      "elegant": "Zərif atmosfer",
+      "expert": "Təcrübəli aşpazlar"
+    }
+  },
+  "menu": {
+    "title": "Bizim menyu",
+    "subtitle": "Ənənəvi yeməklər və premium içkilər təqdim edən əhatəli menyumuzla Gürcü mətbəxinin zəngin palitrası ilə tanış olun",
+    "specialties": {
+      "khinkali": {
+        "title": "Xinqali ixtisasları",
+        "description": "Ənənəvi Gürcü pelmeni, hər gün əl ilə hazırlanır, premium dolğu ilə",
+        "note": "Bizim imza yeməyimiz - mütləq dadmalısınız"
+      },
+      "wine": {
+        "title": "Premium şərab kolleksiyası",
+        "description": "Gürcü və beynəlxalq şərabların geniş kolleksiyası",
+        "note": "Hər yemək üçün mükəmməl uyğunluq"
+      }
+    }
+  },
+  "gallery": {
+    "title": "Qalereya",
+    "subtitle": "Sizi gözləyən atmosfer və mətbəxi hiss edin",
+    "images": {
+      "khinkali": "Ənənəvi xinqali",
+      "khachapuri": "Təzə xaçapuri",
+      "wine": "Premium şərab kolleksiyası",
+      "interior": "Zərif atmosfer",
+      "grilled": "Qızardılmış ixtisaslar",
+      "dining": "Mütərəqqi təqdimat"
+    }
+  },
+  "contact": {
+    "title": "Bizi ziyarət edin",
+    "subtitle": "Bakının qəlbində əsl Gürcü qonaqpərvərliyi yaşayın",
+    "info": {
+      "title": "Əlaqə məlumatı",
+      "location": "Landau 14, Bakı, Azərbaycan",
+      "phone": "+994 50 997 06 06",
+      "hours": "Hər gün: 12:00 - 01:00",
+      "cuisine": "Əsl Gürcü mətbəxi",
+      "quickReservation": "Sürətli rezervasiya üçün zəng edin"
+    },
+    "location": {
+      "title": "Yer",
+      "mapTitle": "Bizi Bakıda tapın",
+      "mapSubtitle": "Landau 14, Bakı, Azərbaycan",
+      "mapDescription": "Bakının mərkəzində, ictimai nəqliyyatla asanlıqla çatmaq olar"
+    }
+  },
+  "reservations": {
+    "title": "Rezervasiya edin",
+    "subtitle": "Unudulmaz Gürcü yemək təcrübəsi üçün masanızı rezerv edin. 24 saat ərzində rezervasiyanızı təsdiq edəcəyik.",
+    "form": {
+      "name": "Ad",
+      "phone": "Telefon",
+      "email": "E-mail",
+      "date": "Tarix",
+      "time": "Vaxt",
+      "guests": "Qonaqlar",
+      "message": "Xüsusi istəklər",
+      "namePlaceholder": "Tam adınız",
+      "phonePlaceholder": "+994 XX XXX XX XX",
+      "emailPlaceholder": "sizin.email@example.com",
+      "guestsPlaceholder": "2",
+      "messagePlaceholder": "Pəhriz məhdudiyyətləri, xüsusi hadisə, oturma üstünlükləri...",
+      "submit": "Rezervasiya sorğusu göndər",
+      "required": "* Tələb olunan sahələr. Rezervasiyanızı təsdiq etmək üçün 24 saat ərzində sizinlə əlaqə saxlayacağıq.",
+      "success": "Rezervasiya sorğunuz üçün təşəkkür edirik! Tezliklə sizinlə əlaqə saxlayacağıq."
+    }
+  },
+  "footer": {
+    "description": "Bakıya əsl Gürcü dadlarını gətiririk - mütərəqqi təqdimat və isti qonaqpərvərlik ilə.",
+    "quickLinks": "Sürətli keçidlər",
+    "hoursLocation": "İş saatları və yer",
+    "copyright": "© 2024 Georgian Point. Bütün hüquqlar qorunur."
+  },
+  "language": {
+    "english": "English",
+    "russian": "Русский",
+    "azerbaijani": "Azərbaycanca"
+  }
+}
