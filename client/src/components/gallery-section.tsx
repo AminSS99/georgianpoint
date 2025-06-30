@@ -35,14 +35,14 @@ const galleryImages = [
 
 export default function GallerySection() {
   return (
-    <section id="gallery" className="py-20 bg-warm-gray brick-texture">
+    <section id="gallery" className="py-16 sm:py-20 bg-warm-gray brick-texture">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h2 className="text-5xl font-bold text-gold mb-4">Gallery</h2>
-          <p className="text-xl text-cream/80">Experience the atmosphere and cuisine that awaits you</p>
+        <div className="text-center mb-12 sm:mb-16">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gold mb-4">Gallery</h2>
+          <p className="text-lg sm:text-xl text-cream/80">Experience the atmosphere and cuisine that awaits you</p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
           {galleryImages.map((image, index) => (
             <motion.div
               key={index}

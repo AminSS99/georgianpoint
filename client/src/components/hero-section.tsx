@@ -34,17 +34,17 @@ export default function HeroSection() {
         </p>
         
         {/* Restaurant Info */}
-        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
+        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8 text-sm sm:text-base">
           <div className="flex items-center text-gold">
-            <MapPin className="mr-2 h-5 w-5" />
-            <span>Landau 14, Baku, Azerbaijan</span>
+            <MapPin className="mr-2 h-4 w-4 sm:h-5 sm:w-5 flex-shrink-0" />
+            <span className="text-center sm:text-left">Landau 14, Baku, Azerbaijan</span>
           </div>
           <div className="flex items-center text-gold">
-            <Clock className="mr-2 h-5 w-5" />
-            <span>12:00 - 01:00</span>
+            <Clock className="mr-2 h-4 w-4 sm:h-5 sm:w-5 flex-shrink-0" />
+            <span>Daily 12:00 - 01:00</span>
           </div>
           <div className="flex items-center text-gold">
-            <Phone className="mr-2 h-5 w-5" />
+            <Phone className="mr-2 h-4 w-4 sm:h-5 sm:w-5 flex-shrink-0" />
             <span>+994 50 997 06 06</span>
           </div>
         </div>

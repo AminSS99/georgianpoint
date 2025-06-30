@@ -96,7 +96,11 @@ This is a full-stack web application for Georgian Point, an authentic Georgian r
 
 ```
 Changelog:
-- June 30, 2025. Initial setup
+- June 30, 2025: Initial setup with Georgian Point restaurant website
+- June 30, 2025: Enhanced mobile responsiveness across all sections
+- June 30, 2025: Added comprehensive reservation form with validation
+- June 30, 2025: Improved navigation and user experience
+- June 30, 2025: Added smooth animations and improved visual hierarchy
 ```
 
 ## User Preferences
