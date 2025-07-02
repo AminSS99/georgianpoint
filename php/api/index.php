@@ -48,8 +48,12 @@ switch ($method) {
                 extract($row);
                 $food_item = [
                     "id" => $id,
-                    "name" => $name,
-                    "description" => $description,
+                    "name_en" => $name_en,
+                    "name_ru" => $name_ru,
+                    "name_az" => $name_az,
+                    "description_en" => $description_en,
+                    "description_ru" => $description_ru,
+                    "description_az" => $description_az,
                     "price" => $price,
                     "image_url" => $image_url,
                     "category_name" => $category_name,
@@ -74,8 +78,12 @@ switch ($method) {
                     extract($row);
                     $food_item = [
                         "id" => $id,
-                        "name" => $name,
-                        "description" => $description,
+                        "name_en" => $name_en,
+                        "name_ru" => $name_ru,
+                        "name_az" => $name_az,
+                        "description_en" => $description_en,
+                        "description_ru" => $description_ru,
+                        "description_az" => $description_az,
                         "price" => $price,
                         "image_url" => $image_url,
                         "category_name" => $category_name,
@@ -97,13 +105,19 @@ switch ($method) {
         $image_file = isset($_FILES['image']) ? $_FILES['image'] : null;
 
         if (
-            !empty($data->name) &&
+            !empty($data->name_en) &&
+            !empty($data->name_ru) &&
+            !empty($data->name_az) &&
             !empty($data->price) &&
             !empty($data->category_name)
         ) {
-            $food->name = $data->name;
+            $food->name_en = $data->name_en;
+            $food->name_ru = $data->name_ru;
+            $food->name_az = $data->name_az;
             $food->price = $data->price;
-            $food->description = isset($data->description) ? $data->description : '';
+            $food->description_en = isset($data->description_en) ? $data->description_en : '';
+            $food->description_ru = isset($data->description_ru) ? $data->description_ru : '';
+            $food->description_az = isset($data->description_az) ? $data->description_az : '';
             $food->category_name = $data->category_name;
             
             // Handle image upload
@@ -153,7 +167,7 @@ switch ($method) {
             }
         } else {
             http_response_code(400);
-            echo json_encode(["message" => "Unable to create food item. Data is incomplete. 'name', 'price', and 'category_name' are required."]);
+            echo json_encode(["message" => "Unable to create food item. Data is incomplete. 'name_en', 'name_ru', 'name_az', 'price', and 'category_name' are required."]);
         }
         break;
 
@@ -175,8 +189,12 @@ switch ($method) {
         }
         $existing_data = $result->fetch_assoc();
 
-        $food->name = isset($data->name) ? $data->name : $existing_data['name'];
-        $food->description = isset($data->description) ? $data->description : $existing_data['description'];
+        $food->name_en = isset($data->name_en) ? $data->name_en : $existing_data['name_en'];
+        $food->name_ru = isset($data->name_ru) ? $data->name_ru : $existing_data['name_ru'];
+        $food->name_az = isset($data->name_az) ? $data->name_az : $existing_data['name_az'];
+        $food->description_en = isset($data->description_en) ? $data->description_en : $existing_data['description_en'];
+        $food->description_ru = isset($data->description_ru) ? $data->description_ru : $existing_data['description_ru'];
+        $food->description_az = isset($data->description_az) ? $data->description_az : $existing_data['description_az'];
         $food->price = isset($data->price) ? $data->price : $existing_data['price'];
         $food->category_name = isset($data->category_name) ? $data->category_name : $existing_data['category_name'];
         $food->is_available = isset($data->is_available) ? $data->is_available : $existing_data['is_available'];
