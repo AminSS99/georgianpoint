@@ -1,0 +1,87 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About Us",
+    "menu": "Menu",
+    "gallery": "Gallery",
+    "contact": "Contact Us"
+  },
+  "hero": {
+    "title": "Georgian Point",
+    "subtitle": "Authentic Georgian Cuisine in the Heart of Baku",
+    "description": "Experience the rich flavors and warm hospitality of Georgia in our sophisticated, dimly-lit restaurant featuring velvet textures and elevated dining",
+    "location": "Landau 14, Baku, Azerbaijan",
+    "hours": "Daily 12:00 - 01:00",
+    "phone": "+994 50 997 06 06",
+    "cta": "Explore Our Menu",
+    "callToReserve": "Call to Reserve"
+  },
+  "about": {
+    "title": "A Taste of Georgia in Baku",
+    "description1": "Georgian Point brings you the authentic flavors of Georgian cuisine in a sophisticated, warm atmosphere. Our dimly-lit dining room features rich velvet textures, exposed brick accents, and an elevated sense of style that creates the perfect backdrop for an unforgettable dining experience.",
+    "description2": "From traditional khinkali and khachapuri to premium wines and spirits, every dish is crafted with attention to detail and respect for Georgian culinary traditions.",
+    "features": {
+      "traditional": "Traditional Recipes",
+      "premium": "Premium Ingredients",
+      "elegant": "Elegant Atmosphere",
+      "expert": "Expert Chefs"
+    }
+  },
+  "menu": {
+    "title": "Our Menu",
+    "subtitle": "Discover the rich tapestry of Georgian cuisine with our comprehensive menu featuring traditional dishes and premium beverages",
+    "specialties": {
+      "khinkali": {
+        "title": "Khinkali Specialties",
+        "description": "Traditional Georgian dumplings, hand-made fresh daily with premium fillings",
+        "note": "Our signature dish - a must-try experience"
+      },
+      "wine": {
+        "title": "Premium Wine Selection",
+        "description": "Extensive collection of Georgian and international wines",
+        "note": "Perfect pairings for every dish"
+      }
+    }
+  },
+  "gallery": {
+    "title": "Gallery",
+    "subtitle": "Experience the atmosphere and cuisine that awaits you",
+    "images": {
+      "khinkali": "Traditional Khinkali",
+      "khachapuri": "Fresh Khachapuri",
+      "wine": "Premium Wine Collection",
+      "interior": "Elegant Atmosphere",
+      "grilled": "Grilled Specialties",
+      "dining": "Sophisticated Dining"
+    }
+  },
+  "contact": {
+    "title": "Visit Us",
+    "subtitle": "Experience authentic Georgian hospitality in the heart of Baku",
+    "info": {
+      "title": "Contact Information",
+      "location": "Landau 14, Baku, Azerbaijan",
+      "phone": "+994 50 997 06 06",
+      "hours": "Daily: 12:00 - 01:00",
+      "cuisine": "Authentic Georgian Cuisine",
+      "quickReservation": "Call for Quick Reservation"
+    },
+    "location": {
+      "title": "Location",
+      "mapTitle": "Find Us in Baku",
+      "mapSubtitle": "Landau 14, Baku, Azerbaijan",
+      "mapDescription": "In the heart of Baku, easily accessible by public transport"
+    }
+  },
+  "footer": {
+    "description": "Bringing authentic Georgian flavors to Baku with sophisticated dining and warm hospitality.",
+    "quickLinks": "Quick Links",
+    "hoursLocation": "Hours & Location",
+    "copyright": "© 2025 Georgian Point. All rights reserved."
+  },
+  "language": {
+    "english": "English",
+    "russian": "Русский",
+    "azerbaijani": "Azərbaycanca"
+  }
+}

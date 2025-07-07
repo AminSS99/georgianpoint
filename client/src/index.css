@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: hsl(0, 0%, 10%);
+  --foreground: hsl(47, 67%, 90%);
+  --muted: hsl(0, 0%, 18%);
+  --muted-foreground: hsl(47, 15%, 65%);
+  --popover: hsl(0, 0%, 18%);
+  --popover-foreground: hsl(47, 67%, 90%);
+  --card: hsl(0, 0%, 18%);
+  --card-foreground: hsl(47, 67%, 90%);
+  --border: hsl(45, 100%, 42%);
+  --input: hsl(0, 0%, 18%);
+  --primary: hsl(351, 53%, 37%);
+  --primary-foreground: hsl(47, 67%, 90%);
+  --secondary: hsl(0, 0%, 18%);
+  --secondary-foreground: hsl(47, 67%, 90%);
+  --accent: hsl(45, 100%, 42%);
+  --accent-foreground: hsl(0, 0%, 10%);
+  --destructive: hsl(0, 84%, 60%);
+  --destructive-foreground: hsl(47, 67%, 90%);
+  --ring: hsl(45, 100%, 42%);
+  --radius: 0.5rem;
+  
+  /* Custom Georgian Point colors */
+  --charcoal: hsl(0, 0%, 10%);
+  --burgundy: hsl(351, 53%, 37%);
+  --gold: hsl(45, 100%, 42%);
+  --rich-brown: hsl(30, 30%, 22%);
+  --cream: hsl(47, 67%, 90%);
+  --warm-gray: hsl(0, 0%, 18%);
+  --soft-gold: hsl(47, 70%, 78%);
+}
+
+.dark {
+  --background: hsl(0, 0%, 10%);
+  --foreground: hsl(47, 67%, 90%);
+  --muted: hsl(0, 0%, 18%);
+  --muted-foreground: hsl(47, 15%, 65%);
+  --popover: hsl(0, 0%, 18%);
+  --popover-foreground: hsl(47, 67%, 90%);
+  --card: hsl(0, 0%, 18%);
+  --card-foreground: hsl(47, 67%, 90%);
+  --border: hsl(45, 100%, 42%);
+  --input: hsl(0, 0%, 18%);
+  --primary: hsl(351, 53%, 37%);
+  --primary-foreground: hsl(47, 67%, 90%);
+  --secondary: hsl(0, 0%, 18%);
+  --secondary-foreground: hsl(47, 67%, 90%);
+  --accent: hsl(45, 100%, 42%);
+  --accent-foreground: hsl(0, 0%, 10%);
+  --destructive: hsl(0, 84%, 60%);
+  --destructive-foreground: hsl(47, 67%, 90%);
+  --ring: hsl(45, 100%, 42%);
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply font-sans antialiased;
+    background-color: var(--charcoal);
+    color: var(--cream);
+    font-family: 'Inter', sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif;
+  }
+}
+
+@layer components {
+  .velvet-texture {
+    background: linear-gradient(45deg, hsl(0, 0%, 18%) 25%, transparent 25%), 
+                linear-gradient(-45deg, hsl(0, 0%, 18%) 25%, transparent 25%), 
+                linear-gradient(45deg, transparent 75%, hsl(0, 0%, 18%) 75%), 
+                linear-gradient(-45deg, transparent 75%, hsl(0, 0%, 18%) 75%);
+    background-size: 4px 4px;
+  }
+  
+  .brick-texture {
+    background-image: 
+        radial-gradient(circle at 25% 25%, hsl(30, 30%, 22%) 2px, transparent 2px),
+        radial-gradient(circle at 75% 75%, hsl(30, 30%, 22%) 2px, transparent 2px);
+    background-size: 8px 8px;
+  }
+  
+  .warm-glow {
+    box-shadow: 0 0 20px hsla(45, 100%, 42%, 0.3);
+  }
+  
+  .hero-overlay {
+    background: linear-gradient(
+        hsla(0, 0%, 10%, 0.7),
+        hsla(0, 0%, 10%, 0.8)
+    );
+  }
+  
+  .menu-category {
+    transition: all 0.3s ease;
+  }
+  
+  .menu-category:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px hsla(45, 100%, 42%, 0.2);
+  }
+  
+  .smooth-scroll {
+    scroll-behavior: smooth;
+  }
+  
+  .fade-in {
+    animation: fadeIn 0.8s ease-in-out;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
+
+@layer utilities {
+  .text-charcoal {
+    color: var(--charcoal);
+  }
+  
+  .text-burgundy {
+    color: var(--burgundy);
+  }
+  
+  .text-gold {
+    color: var(--gold);
+  }
+  
+  .text-rich-brown {
+    color: var(--rich-brown);
+  }
+  
+  .text-cream {
+    color: var(--cream);
+  }
+  
+  .text-warm-gray {
+    color: var(--warm-gray);
+  }
+  
+  .text-soft-gold {
+    color: var(--soft-gold);
+  }
+  
+  .bg-charcoal {
+    background-color: var(--charcoal);
+  }
+  
+  .bg-burgundy {
+    background-color: var(--burgundy);
+  }
+  
+  .bg-gold {
+    background-color: var(--gold);
+  }
+  
+  .bg-rich-brown {
+    background-color: var(--rich-brown);
+  }
+  
+  .bg-cream {
+    background-color: var(--cream);
+  }
+  
+  .bg-warm-gray {
+    background-color: var(--warm-gray);
+  }
+  
+  .bg-soft-gold {
+    background-color: var(--soft-gold);
+  }
+  
+  .border-gold {
+    border-color: var(--gold);
+  }
+  
+  .border-burgundy {
+    border-color: var(--burgundy);
+  }
+}
